@@ -1,0 +1,25 @@
+{
+  "name": "movie-magic",
+  "version": "1.0.0",
+  "description": "JS Back-End Course Workshop",
+  "main": "index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/deniskaragyozov/Movie-magic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/deniskaragyozov/Movie-magic/issues"
+  },
+  "homepage": "https://github.com/deniskaragyozov/Movie-magic#readme",
+  "devDependencies": {
+    "nodemon": "^3.1.9"
+  }
+}
