@@ -7,7 +7,7 @@ export default [
         imageUrl: '/static/img/jungle-cruise.jpeg',
         director: 'Jaume Collet-Serra',
         year: '2021',
-        rating: '6.6',
+        rating: 6.6,
         category: 'movie',
     },
     {
@@ -18,7 +18,7 @@ export default [
         imageUrl: 'https://m.media-amazon.com/images/M/MV5BMTk5ODk1NDkxMF5BMl5BanBnXkFtZTcwNTA5OTY0OQ@@._V1_FMjpg_UX1000_.jpg',
         director: 'Zack Snyder',
         year: '2013',
-        rating: '7.1',
+        rating: 7.1,
         category: 'movie',
     },
     {
@@ -29,7 +29,7 @@ export default [
         director: ' Kiyotaka Oshiyama',
         year: '2024',
         imageUrl: 'https://m.media-amazon.com/images/M/MV5BOWU3YTkxMjYtYTdlMi00NDQ1LThiMjQtNzhmMTFlZmE2ZTU0XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg',
-        rating: '5',
+        rating: 8,
         description: "The overly confident Fujino and the shut-in Kyomoto couldn't be more different, but a love of drawing manga brings these two small-town girls together."
       }
     
