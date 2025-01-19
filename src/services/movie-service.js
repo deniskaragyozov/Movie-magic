@@ -4,7 +4,7 @@ export default {
     findOne(movieId){
     //TODO: Solution if a movie is missing
     
-    const movie = movies.find(movie(movie => movie.id === movieId));
+    const movie = movies.find(movie => movie.id === movieId);
 
     return movie;
     }
