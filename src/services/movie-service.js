@@ -27,7 +27,7 @@ export default {
     },
     create(movieData){
         const newId = uuid();
-
+        
         movies.push({
             id: newId,
             ...movieData,
