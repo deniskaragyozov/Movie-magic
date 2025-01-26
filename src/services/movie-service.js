@@ -25,7 +25,7 @@ export default {
     return movie;
     },
     getOneWithCasts(movieId){
-        return this.getOne(movieId).populate('casts');
+        return this.getOne(movieId).populate('casts'); 
     },
     create(movieData){
         const result = Movie.create({
@@ -38,10 +38,16 @@ export default {
     },
     async attachCast(movieId, castId){
         // First way
-        const movie = await Movie.findById(movieId);
-        movie.casts.push(castId);
-        await movie.save();
+        //const movie = await Movie.findById(movieId);
+        //if(movie.casts.includes(castId)){
+        //    return;
+        //}
+        //movie.casts.push(castId);
+        //await movie.save();
 
-        return movie;
+        //return movie;
+
+        // Second way
+        return Movie.findByIdAndUpdate(movieId, {$push: {casts: castId}});
     }
 }
