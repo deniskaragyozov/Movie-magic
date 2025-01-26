@@ -32,6 +32,4 @@ export default [
         rating: 8,
         description: "The overly confident Fujino and the shut-in Kyomoto couldn't be more different, but a love of drawing manga brings these two small-town girls together."
       }
-    
-
-]
+];
