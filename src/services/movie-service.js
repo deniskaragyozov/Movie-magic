@@ -24,6 +24,9 @@ export default {
 
     return movie;
     },
+    getOneWithCasts(movieId){
+        return this.getOne(movieId).populate('casts');
+    },
     create(movieData){
         const result = Movie.create({
             ...movieData,
