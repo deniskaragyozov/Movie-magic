@@ -1,7 +1,4 @@
 import Movie from '../models/Movie.js';
-import movies from '../movies.js';
-import { v4 as uuid } from 'uuid';
-
 export default {
     getAll(filter = {}){
         let query = Movie.find({});
