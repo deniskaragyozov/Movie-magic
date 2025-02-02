@@ -28,10 +28,10 @@ movieController.post('/create', async (req, res) => {
 movieController.get('/:movieId/details', async (req, res) => {
     const movieId = req.params.movieId;
     const movie = await movieService.getOneWithCasts(movieId); 
-    
-    const casts = [];
 
-    res.render('movie/details', { movie });
+    const isCreator = movie.creator && movie.creator.toString() === req.user.id;
+
+    res.render('movie/details', { movie, isCreator });
 });
 
 movieController.get('/:movieId/attach-cast', async(req, res) => {
