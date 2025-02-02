@@ -23,4 +23,12 @@ export const authMiddleware = (req, res, next) => {
         res.clearCookie('auth');
         res.redirect('/auth/login');
     }
+};
+
+export const isAuth = (req, res, next) => {
+    if(!req.user){
+        return res.redirect('/auth/login')
+    }
+
+    next();
 }
