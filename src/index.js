@@ -20,7 +20,7 @@ runtimeOptions: {
 //db config
 try{
     const defaultUri = 'mongodb://localhost:27017/magic-movies-workshop'
-    await mongoose.connect(process.envbv.DATABASE_URI ?? defaultUri);
+    await mongoose.connect(process.env.DATABASE_URI ?? defaultUri);
 
     console.log('DB Connected Successfully');
 }catch(err){
