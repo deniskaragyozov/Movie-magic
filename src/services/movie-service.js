@@ -52,9 +52,9 @@ export default {
         return Movie.findByIdAndUpdate(movieId, {$push: {casts: castId}});
     },
     delete(movieId){
-        return Movie.findByIdAndDelete(movieId);
+        return Movie.findByIdAndDelete(movieId,  {runValidators: true});
     },
     update(movieId, movieData){
-        return Movie.findByIdAndUpdate(movieId, movieData);
+        return Movie.findByIdAndUpdate(movieId, movieData, {runValidators: true});
     }
 }

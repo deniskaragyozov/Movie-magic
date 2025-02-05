@@ -20,6 +20,7 @@ export const authMiddleware = (req, res, next) => {
 
         next();
     }catch(err){
+        res.setError('Invalid authentication');
         res.clearCookie('auth');
         res.redirect('/auth/login');
     }
@@ -27,6 +28,7 @@ export const authMiddleware = (req, res, next) => {
 
 export const isAuth = (req, res, next) => {
     if(!req.user){
+        res.setError('You must be logged in in order to proceed')
         return res.redirect('/auth/login')
     }
 
